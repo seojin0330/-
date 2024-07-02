@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕 민수야</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/b0/df/95/b0df95cfc6f31293d002d4d6daac253c.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+            margin: 0;
+        }
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .red-button {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕 민수야 잘가</h1>
+    <button class="link-button" onclick="openLink('https://www.google.com')">Go to Google</button>
+    <button class="link-button red-button" onclick="openLink('https://www.youtube.com')">Go to YouTube</button>
+
+    <script>
+        function openLink(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
